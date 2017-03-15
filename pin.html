@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+ <link rel="stylesheet" href="pin.css"/>
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<head>
+		<title>Pinterest Clone</title>
+	</head>
+
+	<body>
+		<div id="header">
+			<ul>
+				<div id="logo"><img src="data:image/png;base64,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"/>
+				</div>
+				<div id="Search">
+					<input id="search-box" type="text" placeholder="Search">
+				</div>
+				<div id="nav-buttons">
+					<a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-commenting" aria-hidden="true"></i></a>
+				</div>
+			</ul>
+		</div>
+
+		<div id="wrapper">
+			<div id="columns">
+
+				<div class="pin">
+					<img src="images/img1.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img2.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img3.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img4.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img5.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img6.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img7.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img8.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img9.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img10.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img11.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+
+				<div class="pin">
+					<img src="images/img12.jpeg"/>
+					<p>These are my pretty photo's of guns that are some of the best long range weapons to go with</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<h1>Welcome to your home feed! Click any Pin for a closer look</h1>
+		</footer>
+	</body>
+</html>
